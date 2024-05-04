@@ -1,5 +1,4 @@
 import re
-
 def get_valid_input(prompt, validation_regex):
     while True:
         user_input = input(prompt)
@@ -7,8 +6,7 @@ def get_valid_input(prompt, validation_regex):
             return user_input
         else:
             print("Invalid input. Please try again.")
-
-
+            
 # Get user information
 first_name = get_valid_input("Enter your first name: ", r'^[A-Za-z]+$')
 last_name = get_valid_input("Enter your last name: ", r'^[A-Za-z]+$')
@@ -19,7 +17,6 @@ email = get_valid_input("Enter your email id: ", r'^\S+@\S+\.\S+$')
 # Capitalize names
 first_name = first_name.capitalize()
 last_name = last_name.capitalize()
-
 # Print user information
 print("\nUser Information:")
 print(f"First Name: {first_name}")
