@@ -46,8 +46,8 @@ Menucard{
         Special milk:35,
     }
 '''
-numOfCategories = int(input('Enter the total number of categories : '))
-menuCategories=[]        #['Breakfast','Dosai','Sweet','Lunch','Rich','Eveningsnacks','Special','Hotbeverages']
+numOfCategories = int(input('Enter the total number of categories : '))    #['Breakfast','Dosai','Sweet','Lunch','Rich','Eveningsnacks','Special','Hotbeverages']
+menuCategories=[]
 for i in range(1,numOfCategories+1):
     Categories=input(f'\tEnter the category {i} : ')
     menuCategories.append(Categories)
@@ -70,7 +70,6 @@ for categoryy,foodd in menu.items():
 Breakfast
     Hot idly                                            $.45
     Pongal                                              $.45
-
     Appam                                               $.85
     Sambar vadai                                        $.45
     poori                                               $.60
